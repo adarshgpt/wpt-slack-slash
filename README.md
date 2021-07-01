@@ -7,9 +7,11 @@
 #### Steps to follow in integrating WPT & Slack
 
 ##### 1. Setting up a java project.
+  * WPT API Key, Get it from here [WebPageTest API Key](https://app.webpagetest.org/ui/entry/wpt/signup?enableSub=true&utm_source=docs&utm_medium=github&utm_campaign=slackbot&utm_content=account)
   * Clone this repository.
   * Update bot_token,channel_id, ngrokUrl in application.properties file (bottoken="", channelid="", ngrokurl="")
-
+  
+  
  We have currently two APIs to serve requests
 * To trigger slack modal on command execution. This path will be used for slash commands in slack (ngrokUrl/submittest)
 * To generate the response coming from webpagetest as view and post on slack. This path will be used for interactivity URL (ngrokUrl/test)
@@ -45,22 +47,28 @@
  
  * Slash Command, make sure to add api path of triggering slack URL modal. (https://ngrokUrl/submittest)
  
- slash command image
+ 
+ ![image](https://user-images.githubusercontent.com/81590480/124176573-ae74b600-dacc-11eb-971e-b8f136959356.png)
+ 
  
  * Next is adding an interactivity URL, any interactions with modals or interactive components are sent to this URL. Add the second APIs URL to post the message once response from WPT is fetched. (https://ngrokUrl/test)
  
- interactivity image
+
+![image](https://user-images.githubusercontent.com/81590480/124177151-77eb6b00-dacd-11eb-8092-c1f21361da02.png)
  
- * Run the command on slack:
+
+* Run the command on slack:
      Next step is to check our command on slack, start by typing webpagetest, you should see a recommendation of webpagetest as below.
+
+![image](https://user-images.githubusercontent.com/81590480/124177785-50e16900-dace-11eb-97ec-836308912e81.png)
+
      
-     slack slash command image
-     
- * Above command should open a modal like below
+ * Above command should open a modal like below, enter your details and 'Submit'.
  
-    modal view image
- 
- * Once all these things are done, run your application and hot slash command from slack ('/').You will get your desired results in your slack channel once pingback url has successfully captured test results  
+![image](https://user-images.githubusercontent.com/81590480/124178027-aa499800-dace-11eb-8725-a99f5d3a3f6c.png)
+
+
+ * Once all these things are done and submitted, you will get your desired results in your slack channel once pingback url has successfully captured test results  
 
 <img width="540" alt="slack" src="https://user-images.githubusercontent.com/81590480/122232219-b2071b00-ced8-11eb-87ba-28db9e007610.PNG">
 
