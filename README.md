@@ -2,8 +2,10 @@
   <img width="" height="" src="https://camo.githubusercontent.com/3304d6a9fa86ba25fbbf14d7b31bb44382733b3292411f3f16ffa956e5c1a8a0/68747470733a2f2f646f63732e77656270616765746573742e6f72672f696d672f7770742d6e6176792d6c6f676f2e706e67">
 </p>
 
-[Learn about more WebPageTest API Integrations in our docs](https://docs.webpagetest.org/api/integrations/#officially-supported-integrations)
-
+<p align = "center">
+   <a href="https://docs.webpagetest.org/api/integrations/#officially-supported-integrations">Learn about more WebPageTest API Integrations in our docs</a> 
+   </p>
+   
 #### Steps to follow in integrating WPT & Slack
 
 ##### 1. Setting up a java project.
@@ -60,10 +62,10 @@
 * Run the command on slack:
      Next step is to check our command on slack, start by typing webpagetest, you should see a recommendation of webpagetest as below.
 
-![image](https://user-images.githubusercontent.com/81590480/124177785-50e16900-dace-11eb-97ec-836308912e81.png)
+![image](https://user-images.githubusercontent.com/81590480/124259658-61d0bf80-db4c-11eb-82f8-b87d096b09e0.png)
 
      
- * Above command should open a modal like below, enter your details and 'Submit'.
+* Above command should open a modal like below, enter your details and 'Submit'.
  
 ![image](https://user-images.githubusercontent.com/81590480/124178027-aa499800-dace-11eb-8725-a99f5d3a3f6c.png)
 
